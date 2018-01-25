@@ -4,13 +4,12 @@
 			<title>Loyola Schedule</title>
 			<link href="schedule.css" type="text/css" rel="stylesheet">
 			<!-- Links this html document with the table.css document for the edits to be made using css -->
-			<form id="searchBar">
+		</head>
+		<body>
+			<!--<form id="searchBar">-->
 				<input type="text" onkeyup="myFunction()" placeholder="Search for classes...">
 				<input type="submit">
-			</form>
-		</head>
-			
-		<body>
+			<!--</form>-->
 		<table>
 			<thead>
 			<!-- This is the top of the rows, so the titles -->
@@ -125,29 +124,41 @@
 		<script>
 			var classes = document.getElementById(searchBar);
 			switch (classes){
-				case:'Math'
-				break;
-				case:'Science'
-				break;
-				case:'French'
-				break;
-				case:'English'
-				break;
-				case:'History'
-				break;
-				case:'Religion'
-				break;
-				case:'Music'
-				break:
-				case:'Computer Programing'
-				break;
-				case:'Homeroom'
-				break;
-				case:'Speech'
-				break;
-				case:'LA-4'
-				break;
+				case Math:
+					console.log('Math1');
+					break;
+				case Science:
+					console.log('Science1');
+					break;
+				case French:
+					console.log('French1');
+					break;
+				case English:
+					console.log('English1');
+					break;
+				case History:
+					console.log('History1');
+					break;
+				case Religion:
+					console.log('Religion1');
+					break;
+				case Music:
+					console.log('Music1');
+					break;
+				case ComputerPrograming:
+					console.log('Computer Programming1');
+					break;
+				case Homeroom:
+					console.log('Homeroom1');
+					break;
+				case Speech:
+					console.log('Speech1');
+					break;
+				case LA:
+					console.log('LA-41');
+					break;
 				default:
+				console.log('R.I.P.');
 			}
 		</script>
 	</body>
