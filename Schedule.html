@@ -6,10 +6,8 @@
 			<!-- Links this html document with the table.css document for the edits to be made using css -->
 		</head>
 		<body>
-			<form>
-				<input id="searchBar" type="text" placeholder="Search for classes...">
-				<input type="submit">
-			</form>
+			<input id="selectedClass" type="text" placeholder="Search for classes...">
+			<input onclick="highlightingStyle()" type="submit">
 		<table>
 			<thead>
 			<!-- This is the top of the rows, so the titles -->
@@ -123,46 +121,51 @@
 		<!-- closes off the table making it complete -->
 		<script>
 			var selectedClass;
-			function highlightingStyle;
-			switch (selectedClass){
-				case 'Math':
-					selectedClass = 'Math';
-					break;
-				case 'Science':
-					selectedClass = 'Science';
-					break;
-				case 'French':
-					selectedClass = 'French';
-					break;
-				case 'English':
-					selectedClass = 'English';
-					break;
-				case 'History':
-					selectedClass = 'History';
-					break;
-				case 'Religion':
-					selectedClass = 'Religion';
-					break;
-				case 'Music':
-					selectedClass = 'Music';
-					break;
-				case 'ComputerPrograming':
-					selectedClass = 'Computer Programming';
-					break;
-				case 'Homeroom':
-					selectedClass = 'Homeroom';
-					break;
-				case 'Speech':
-					selectedClass = 'Speech';
-					break;
-				case 'LA':
-					selectedClass = 'LA-4';
-					break;
-				default:
-					console.log('R.I.P.');
+			function highlightingStyle() {
+				var className = document.getElementById("selectedClass").value ;
+				switch (className){
+					case 'Math':
+						selectedClass = 'Math';
+						break;
+					case 'Science':
+						selectedClass = 'Science';
+						break;
+					case 'French':
+						selectedClass = 'French';
+						break;
+					case 'English':
+						selectedClass = 'English';
+						break;
+					case 'History':
+						selectedClass = 'History';
+						break;
+					case 'Religion':
+						selectedClass = 'Religion';
+						break;
+					case 'Music':
+						selectedClass = 'Music';
+						break;
+					case 'ComputerPrograming':
+						selectedClass = 'CP';
+						break;
+					case 'Homeroom':
+						selectedClass = 'Homeroom';
+						break;
+					case 'Speech':
+						selectedClass = 'Speech';
+						break;
+					case 'LA':
+						selectedClass = 'LA';
+						break;
+					default:
+						console.log('R.I.P.');
+				}
+				var saveClass = document.getElementsByClassName(selectedClass);
+				for (i=0 ; i<className.length ; i++) {
+					
+				/*	"selectedClass" {background-color: yellow;}*/
+				}
 			}
-			var className = document.getElementById("selectedClass").value ;
-			for (i=0 ; i<className.length ; i++)
 		</script>
 
 	</body>
