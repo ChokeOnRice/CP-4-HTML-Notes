@@ -7,7 +7,8 @@
 		</head>
 		<body>
 			<input id="selectedClass" type="text" placeholder="Search for classes...">
-			<input onclick="highlightingStyle()" type="submit">
+			<input onclick="highlightingStyle()"  type="submit" >
+			<input type="button" value="Reload Page" onClick="window.location.reload()">
 		<table>
 			<thead>
 			<!-- This is the top of the rows, so the titles -->
@@ -145,7 +146,7 @@
 					case 'Music':
 						selectedClass = 'Music';
 						break;
-					case 'ComputerPrograming':
+					case 'Computer Programing':
 						selectedClass = 'CP';
 						break;
 					case 'Homeroom':
@@ -156,6 +157,9 @@
 						break;
 					case 'LA':
 						selectedClass = 'LA';
+						break;
+					case 'Gym' :
+						selectedClass = 'Pe' ;
 						break;
 					default:
 						console.log('R.I.P.');
